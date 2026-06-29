@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #1E3A8A;
+    margin: 10px;
+    background: linear-gradient(130deg,#1E3A8A,#2563EB);
+    margin-top: 20px;
+    border-radius: 30px;
+
+    
+
+}
+#logo{
+    margin-left: 20px;
+}
+#nav{
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    gap:100px;
+    padding-top: 40px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover{
+    font-size: 35px;
+}
+@media (max-width: 768px){
+ 
+    .header{
+        flex-direction: column;
+        padding:20px
+
+     
+    }
+    #logo {
+        text-align: center;
+       
+    }
+    #logo img{
+        height: 150px;
+        width: 150px;
+    }
+    #nav{
+        align-items: center;
+        gap:10px;
+        justify-content: space-evenly;
+        padding-left: 100px;
+        padding-bottom: 30px;
+    }
+
+}
+.hero{
+    border: 2px solid #1E3A8A;
+    margin: 10px;
+    height: 70vh;
+    border-radius: 30px;
+    background:
+    linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.8)),
+    url("image/R.jpg");
+
+    background-size: cover;
+
+}
+h1{
+    font-size: 50px;
+    color: #FFFFFF;
+   padding-bottom: 20px;
+   padding-top: 40px;
+   padding-left: 60px;
+   
+   
+}
+p{
+    color: #E2E8F0;
+    font-size: 20px;
+    width: 400px;
+    
+    padding-left: 60px;
+    
+}
+button{
+    background: #22C55E;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 40px;
+
+
+}
+button:hover{
+    background: #b13ac3;
+    
+}
+@media (max-width: 768px){
+    h1{
+        text-align: center;
+    }
+    p{
+        margin-left: 20%;
+        margin-top:30px;
+       
+        
+       
+    }
+    button{
+        margin-left: 40%;
+        margin-top: 30px;
+    }
+}
+
+.company1{
+    display: flex;
+    gap: 60px;
+    border: 2px solid #1E3A8A;
+    margin: 10px;
+   overflow: hidden;
+   background: linear-gradient(150deg,#db2121,#2563EB);
+   height: 250px;
+   border-radius: 30px;
+   padding: 15px;
+  
+   
+   
+}
+
+
+.company1 img{
+    animation:company12 15s linear infinite;
+    border-radius: 30%;
+    padding: 10px;
+   
+
+}
+.company h1{
+    color: rgb(29, 35, 114);
+    font-size: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+@keyframes company12{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-300%);
+    }
+}
+.home{
+    background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.8)),
+    url("image/about.jpg");
+    height: 280px;
+    margin: 10px;
+    border-radius: 30px;
+
+}
+.home h1{
+    font-size: 50px;
+    color: #FFFFFF;
+   padding-bottom: 20px;
+   padding-top: 40px;
+   padding-left: 60px;
+   text-align: center;
+   
+
+}
+.home p{
+    color: #E2E8F0;
+    font-size: 20px;
+    width: 100%;
+    
+    padding-left: 60px;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .home{
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .home h1{
+        text-align: center;
+    }
+    .home p{
+        text-align: center;
+        width:400px
+
+       
+        
+       
+    }
+    
+}
+.footer{
+    display: flex;
+    /* justify-content: space-between; */
+    gap:10px;
+    border: 2px solid #1E3A8A;
+    margin: 10px;
+    background: linear-gradient(130deg,#1E3A8A,#2563EB);
+
+    border-radius: 30px;
+    padding: 20px;
+
+
+}
+.footer a{
+   margin-left: 50px;
+    margin-top: 20px;
+    
+    
+}
+.footer h1{
+   
+    display: flex;
+    margin-left: 600px;
+    
+    font-size: medium;
+    
+    
+    /* padding-top: 40px; */
+}
+@media (max-width:768px){
+
+    .footer{
+        display: flex;
+        
+        /* align-items: center; */
+        /* justify-content: center; */
+        gap: 20px;
+        text-align: center;
+        padding: 30px 20px;
+        height:100px;
+    }
+
+    .footer a{
+        display: inline-block;
+        margin: 8px 0;
+        font-size: 18px;
+    }.footer h1{
+        display: inline;
+        margin: 10px 0;
+        font-size: 14px;
+        margin-left: 130px;
+        
+    }
+
+    
+}
